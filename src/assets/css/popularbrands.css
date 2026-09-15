@@ -1,0 +1,79 @@
+div.popularbrands {
+  width: 100%;
+  height: 224px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0px;
+
+  .popularbrandsslider {
+    width: 92%;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid #efeff0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    .popularbrands-title-and-svg {
+      width: 100%;
+      height: 44px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 20px;
+      .popularbrands-svg {
+        margin-left: 5px;
+      }
+      .popular-brands-main-title {
+        font-family: IranYekan;
+        font-size: 20px;
+      }
+    }
+    .popularbrandsswiperslide {
+      width: 100%;
+      height: 118px;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        div {
+          position: relative;
+          img {
+            width: 110px;
+            height: 110px;
+            object-fit: contain;
+          }
+          &::after {
+            content: "";
+            position: absolute;
+            width: 1px;
+            height: 200px;
+            background-color: #efeff0;
+            top: 0px;
+            left: -15px;
+          }
+        }
+      }
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

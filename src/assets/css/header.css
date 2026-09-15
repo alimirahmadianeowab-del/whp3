@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   background-color: white;
-  position:relative;
+  position: relative;
   .banner {
     width: 100%;
     height: 60px;
@@ -121,61 +121,138 @@
           display: flex;
           align-items: center;
           .sub-menu {
+            z-index: 100;
             display: none;
             width: 50%;
             height: 400px;
-            background-color: lightblue;
+            background-color: white;
             position: absolute;
             top: 100%;
             .sub-menu-items {
               width: 15%;
               height: 100%;
-              background-color: lightgreen;
-                .ul-sub-items{
-                  width: 100%;
-                  height: 100%;
-                  background-color: white;
-                  list-style: none;
-                  .sub-item {padding: 15px;
-                    background-color: var(--gray-color-100);
-                    & p {color: var(--gray-color-800);}
-                    fill: var(--gray-color-800) !important;
-                    display: flex;
-                    align-items: center;
-                    gap: 5px;
-                    &:hover {background-color:white;
-                    & p {color:red;} 
-                    & svg {fill: red !important;}
-                    & .div-sub-left-items {display: flex;}}
-                    .div-sub-left-items {
-                      width: calc(100% - 15%);
-                      height: 300px;
-                      background-color: greenyellow;
-                      position: absolute;
-                      top: 0;
-                      left: 0;
-                      display: none;
-                      flex-wrap: row wrap;
-                      justify-content: space-between;
-                      .sub-left-item {
-                        width: 24%;
-                        height: 100%;
-                        background-color: tomato;
-                      }
-
+              background-color: white;
+              .ul-sub-items {
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                list-style: none;
+                .sub-item {
+                  padding: 15px;
+                  background-color: var(--gray-color-100);
+                  & .sub-items-p {
+                    color: var(--gray-color-800);
+                  }
+                  fill: var(--gray-color-800) !important;
+                  display: flex;
+                  align-items: center;
+                  gap: 5px;
+                  &:hover {
+                    background-color: white;
+                    & .sub-items-p {
+                      color: red;
+                    }
+                    & svg {
+                      fill: red !important;
+                    }
+                    & .div-sub-left-items {
+                      display: flex;
+                    }
+                  }
+                  .div-sub-left-items {
+                    overflow-y: auto;
+                    width: calc(100% - 15%);
+                    height: 100%;
+                    background-color: white;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    display: none;
+                    flex-wrap: row wrap;
+                    justify-content: space-between;
+                    .sub-left-item {
+                      width: 24%;
+                      height: inherit;
+                      background-color: white;
                     }
                   }
                 }
-
+              }
             }
           }
           &:hover {
-            .sub-menu{
+            .sub-menu {
               display: block;
             }
           }
         }
       }
+    }
+  }
+}
+.sub-left-item {
+  padding-right: 10px;
+}
+.mahsolat-a {
+  color: #0d4485;
+  text-decoration: none;
+  font-size: px;
+  font-weight: 800;
+  margin: 15px;
+  & > svg {
+    fill: #0d4485 !important;
+  }
+}
+.sub-menu-all-span {
+  display: flex;
+  align-items: center;
+  vertical-align: auto;
+  .sub-menu-svg {
+    fill: black !important;
+  }
+  .sub-menu-khat-span {
+    width: 2px;
+    height: 15px;
+    background-color: red;
+    margin-left: 12px;
+  }
+  .sub-menu-span {
+    margin-left: 5px;
+    &:hover {
+      color: red;
+    }
+  }
+}
+.sub-menu-p {
+  color: #646770;
+  margin: 4px;
+  &:hover {
+    color: red;
+  }
+}
+
+.div-sub-left-items {
+  display: flex;
+  flex-direction: row-reverse;
+  direction: ltr;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  .header-menu-adres {
+    display: flex;
+    align-items: center;
+    background-color: #fef6f0;
+    color: #f6871f;
+    border: none;
+    outline: none;
+    border-radius: 999999px;
+    
+    svg {fill: #f6871f !important;
+
+    
     }
   }
 }
