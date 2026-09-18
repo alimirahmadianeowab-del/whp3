@@ -1,0 +1,147 @@
+.megamenu {
+  z-index: 99999;
+  height: 100%;
+  border-bottom: 3px solid;
+  border-color: white;
+  &:hover {
+    cursor: pointer;
+    border-color: var(--red);
+  }
+  &:hover .left-mobile {
+    display: block;
+  }
+  &:hover .left-side {
+    display: block;
+  }
+  &:hover .right-side {
+    display: flex;
+  }
+}
+
+.right-side {
+  display: none;
+  height: 500px;
+  position: absolute;
+  top: 168px;
+  right: 20px;
+  width: 200px;
+  border-bottom-right-radius: 15px;
+  background-color: var(--nude-300);
+  display: none;
+  flex-direction: column;
+  overflow: auto;
+  font-size: 13px;
+  direction: ltr;
+  justify-content: space-evenly;
+  & > * {
+    height: 26.31px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 23px 5px;
+    transition-duration: 300ms;
+    direction: rtl;
+  }
+}
+
+.right-side > *:hover {
+  background-color: var(--nude-200);
+  color: var(--red-400);
+  svg {
+    fill: var(--red-400) !important;
+  }
+}
+
+.left-side {
+  display: none;
+  height: 500px;
+  position: absolute;
+  right: 220px;
+  top: 168px;
+  flex-direction: column;
+}
+.first-line {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-right: 20px;
+  font-size: 13px;
+  color: var(--blue-700);
+}
+.left-mobile,
+.left-laptop {
+  height: 100%;
+  display: none;
+  overflow: auto;
+  background-color: var(--nude-200);
+  border-bottom-left-radius: 15px;
+  padding-bottom: 7px;
+  direction: ltr;
+  * {
+    direction: rtl;
+  }
+}
+.left-mobile .main-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.radif {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  ul {
+    font-size: 13px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-right: 20px;
+    list-style: none;
+    .esm {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-weight: bold;
+      span {
+        &:nth-of-type(1) {
+          color: var(--red-400);
+        }
+      }
+    }
+  }
+  li {
+    color: var(--gray-700);
+  }
+}
+
+.left-side {
+  li:hover {
+    color: var(--red-400) !important;
+    fill: var(--red-400) !important;
+  }
+  .esm:hover {
+    color: var(--red-400);
+  }
+}
+
+.left-laptop .main-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.megamenu:has(.laptop:hover, .khane-ashpazkhane:hover,.arayeshi:hover, .tahrir:hover, .khodro:hover, .abzar:hover, .varzesh:hover, .supermarket:hover, .mahali:hover,  .left-laptop:hover) .left-mobile {
+  display: none;
+}
+.megamenu:has(.laptop:hover, .khane-ashpazkhane:hover,.arayeshi:hover, .tahrir:hover, .khodro:hover, .abzar:hover, .varzesh:hover, .supermarket:hover, .mahali:hover, .left-laptop:hover) .left-laptop {
+  display: block;
+}
+.megamenu:has(.mobile:hover, .kalaye-digital:hover,.lavazem-khanegi:hover, .mod:hover, .tala:hover, .salamat:hover, .ketab:hover, .gift-card:hover, .asbab-bazi:hover, .petshop:hover, .left-mobile:hover) .left-mobile {
+  display: block;
+}
+.megamenu:has(.mobile:hover, .kalaye-digital:hover,.lavazem-khanegi:hover, .mod:hover, .tala:hover, .salamat:hover, .ketab:hover, .gift-card:hover, .asbab-bazi:hover, .petshop:hover, .left-mobile:hover) .left-laptop {
+  display: none;
+}
+.left-side {background-color: white;}
+.right-side {background-color: white;}

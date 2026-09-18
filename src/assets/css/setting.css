@@ -3,6 +3,7 @@
   margin: 0;
   direction: rtl;
 }
+.main {width: 80%; margin: 0 auto;}
 :root {
   --gray-color-100: #ECEDEF;
   --gray-color-150: #e0e0e2;
@@ -329,5 +330,41 @@
   --color-campaign-norouz-rgb: 228, 8, 61;
   --color-blackfriday: #231f20;
   --color-blackfriday-rgb: 35, 31, 32;
+
+}
+:root{
+  --gray: #444;
+  --gray-900: rgb(211, 211, 211);
+  --gray-800:rgb(128, 128, 128);
+  --gray-700:rgb(85, 85, 85);
+   --gray-600:rgb(188, 188, 188);
+   --gray-500:rgb(241, 239, 239);
+   --gray-400:#81858b;
+   --gray-300:rgb(222, 221, 221);
+   --gray-200:rgb(181, 177, 177);
+   --gray-100:rgb(167, 165, 165);
+  --black:rgb(0, 0, 0);
+  --black-500:rgba(0, 0, 0, 0.468);
+  --white: #fff;
+  --white-100:#e0e0e0;
+  --white-200:#f0f0f1;
+  --white-300:rgb(162, 162, 162);
+  --white-400:rgb(237, 235, 235);
+  --blue-900:#3f4064;
+  --blue-800:#3c4b6d;
+  --blue-600:#1672dd;
+  --blue-700:#0d4485;
+  --red:#d62e4e;
+  --red-400:#D32f2f;
+  --red-300:#ef4055;
+  --creamy:#fcf3ea;
+  --creamy-300:#fef6ef;
+  --creamy-200:#fbe7d6;
+  --brown-300:#934c0f;
+  --green:#72ba2b;
+  --nude-300:rgb(233, 231, 231);
+  --nude-200:whitesmoke;
+  --orange:#f57f16;
+  --pink: #ff009c;
 
 }

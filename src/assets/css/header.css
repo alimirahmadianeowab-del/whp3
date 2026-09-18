@@ -16,11 +16,11 @@
     margin: 0 auto;
     padding: 12px 0px;
     display: flex;
-    flex-flow: row warp;
+    flex-flow: row wrap;
     justify-content: space-between;
     .logo-and-search {
       display: flex;
-      flex-wrap: row wrap;
+      flex-wrap: wrap;
       justify-content: flex-start;
       align-items: center;
       gap: 5px;
@@ -66,7 +66,7 @@
     .user {
       display: flex;
       align-items: center;
-      flex-flow: row warp;
+      flex-flow: row wrap;
       .notif {
         cursor: pointer;
         padding: 8px;
@@ -109,10 +109,12 @@
     width: calc(100% - 268px);
     margin: 0px auto;
     .menu {
+      display: flex;
+      align-self: end;
       .menu-items {
         list-style: none;
         display: flex;
-        flex-flow: row warp;
+        flex-flow: row wrap;
         justify-content: flex-start;
         align-items: center;
         .menu-item {
@@ -120,78 +122,10 @@
           padding: 0px 12px;
           display: flex;
           align-items: center;
-          .sub-menu {
-            z-index: 100;
-            display: none;
-            width: 50%;
-            height: 400px;
-            background-color: white;
-            position: absolute;
-            top: 100%;
-            .sub-menu-items {
-              width: 15%;
-              height: 100%;
-              background-color: white;
-              .ul-sub-items {
-                width: 100%;
-                height: 100%;
-                background-color: white;
-                list-style: none;
-                .sub-item {
-                  padding: 15px;
-                  background-color: var(--gray-color-100);
-                  & .sub-items-p {
-                    color: var(--gray-color-800);
-                  }
-                  fill: var(--gray-color-800) !important;
-                  display: flex;
-                  align-items: center;
-                  gap: 5px;
-                  &:hover {
-                    background-color: white;
-                    & .sub-items-p {
-                      color: red;
-                    }
-                    & svg {
-                      fill: red !important;
-                    }
-                    & .div-sub-left-items {
-                      display: flex;
-                    }
-                  }
-                  .div-sub-left-items {
-                    overflow-y: auto;
-                    width: calc(100% - 15%);
-                    height: 100%;
-                    background-color: white;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    display: none;
-                    flex-wrap: row wrap;
-                    justify-content: space-between;
-                    .sub-left-item {
-                      width: 24%;
-                      height: inherit;
-                      background-color: white;
-                    }
-                  }
-                }
-              }
-            }
-          }
-          &:hover {
-            .sub-menu {
-              display: block;
-            }
-          }
         }
       }
     }
   }
-}
-.sub-left-item {
-  padding-right: 10px;
 }
 .mahsolat-a {
   color: #0d4485;
@@ -203,56 +137,34 @@
     fill: #0d4485 !important;
   }
 }
-.sub-menu-all-span {
-  display: flex;
-  align-items: center;
-  vertical-align: auto;
-  .sub-menu-svg {
-    fill: black !important;
-  }
-  .sub-menu-khat-span {
-    width: 2px;
-    height: 15px;
-    background-color: red;
-    margin-left: 12px;
-  }
-  .sub-menu-span {
-    margin-left: 5px;
-    &:hover {
-      color: red;
-    }
-  }
-}
-.sub-menu-p {
-  color: #646770;
-  margin: 4px;
-  &:hover {
-    color: red;
-  }
-}
-
-.div-sub-left-items {
-  display: flex;
-  flex-direction: row-reverse;
-  direction: ltr;
-  overflow-y: auto;
-  overflow-x: hidden;
-}
-.nav {
+.bottem {
   display: flex;
   justify-content: space-between;
   .header-menu-adres {
+    cursor: pointer;
+    margin: 4px;
+    padding: 8px;
     display: flex;
-    align-items: center;
     background-color: #fef6f0;
     color: #f6871f;
     border: none;
     outline: none;
     border-radius: 999999px;
-    
-    svg {fill: #f6871f !important;
-
-    
+    svg {
+      fill: #f6871f !important;
     }
   }
 }
+.menu-item {
+  cursor: pointer;
+  padding: 0px 12px;
+  display: flex;
+  align-items: center;
+}
+.menu-item:hover {
+  .megamenu {
+    display: block;
+    z-index: 9999;
+  }
+}
+

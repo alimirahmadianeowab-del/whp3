@@ -19,46 +19,47 @@ const mainSwiper = new Swiper(".mainSwiper", {
     speed: 600
 });
 
+const amazingSwiper = new Swiper(".amazingSwiper",{
+slidesPerView:6,
+spaceBetween:8,
+speed:600,
+navigation:{
+nextEl:".amazingSwiper .swiper-button-next",
+prevEl:".amazingSwiper .swiper-button-prev"
+}
+});
+const deliverySwiper = new Swiper(".deliverySwiper",{
+slidesPerView:7,
+spaceBetween:8,
+speed:600,
+navigation:{
+nextEl:".deliverySwiper .swiper-button-next",
+prevEl:".deliverySwiper .swiper-button-prev"
+}
+});
+const productSwiper = new Swiper(".productSwiper",{
+slidesPerView:7,
+spaceBetween:8,
+speed:600,
+navigation:{
+nextEl:".productSwiper .swiper-button-next",
+prevEl:".productSwiper .swiper-button-prev"
+}
+});
+const addressButton = document.querySelector(".header-menu-adres");
+const addressOverlay = document.querySelector("#addressOverlay");
+const addressClose = document.querySelector("#addressClose");
 
-// =========================
-// شگفت انگیزها
-// =========================
-
-const amazingSwiper = new Swiper(".amazingSwiper", {
-    slidesPerView: "auto",
-    spaceBetween: 0,
-    speed: 500,
-    navigation: {
-        nextEl: ".amazing-next",
-        prevEl: ".amazing-prev"
-    }
+addressButton.addEventListener("click",function(){
+addressOverlay.classList.add("active");
 });
 
+addressClose.addEventListener("click",function(){
+addressOverlay.classList.remove("active");
+});
 
-// =========================
-// تایمر
-// =========================
-
-let amazingTime = (11 * 60 * 60) + (44 * 60) + 27;
-
-function updateAmazingTimer() {
-    const hours = Math.floor(amazingTime / 3600);
-    const minutes = Math.floor((amazingTime % 3600) / 60);
-    const seconds = amazingTime % 60;
-
-    document.getElementById("amazing-hours").textContent =
-        String(hours).padStart(2, "0");
-
-    document.getElementById("amazing-minutes").textContent =
-        String(minutes).padStart(2, "0");
-
-    document.getElementById("amazing-seconds").textContent =
-        String(seconds).padStart(2, "0");
-
-    if (amazingTime > 0) {
-        amazingTime--;
-    }
+addressOverlay.addEventListener("click",function(event){
+if(event.target === addressOverlay){
+addressOverlay.classList.remove("active");
 }
-
-updateAmazingTimer();
-setInterval(updateAmazingTimer, 1000);
+});

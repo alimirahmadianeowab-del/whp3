@@ -1,0 +1,200 @@
+
+.amazing-section{
+width:85%;
+height:295px;
+margin:30px auto;
+padding:10px;
+background:#D52D4E;
+border-radius:18px;
+display:flex;
+flex-direction:row-reverse;
+direction:ltr;
+box-sizing:border-box;
+overflow:hidden;
+}
+.amazing-info{
+width:14%;
+min-width:145px;
+height:100%;
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+gap:18px;
+color:#fff;
+box-sizing:border-box;
+}
+.amazing-title{
+font-size:28px;
+font-weight:700;
+color:#fff;
+}
+.amazing-timer{
+display:flex;
+align-items:center;
+justify-content:center;
+direction:ltr;
+gap:4px;
+}
+.amazing-timer span{
+font-size:16px;
+font-weight:700;
+color:#222;
+background:#fff;
+border-radius:5px;
+padding:5px 6px;
+min-width:25px;
+text-align:center;
+}
+.amazing-more{
+display:flex;
+align-items:center;
+justify-content:center;
+width:110px;
+height:38px;
+background:#fff;
+color:#333;
+font-size:13px;
+font-weight:500;
+text-decoration:none;
+border-radius:8px;
+box-sizing:border-box;
+}
+.amazingSwiper{
+width:86%;
+height:100%;
+padding:0 5px;
+box-sizing:border-box;
+overflow:hidden;
+position:relative;
+}
+.amazingSwiper .swiper-wrapper{
+height:100%;
+align-items:center;
+}
+.amazingSwiper .swiper-slide{
+height:275px;
+display:flex;
+align-items:center;
+justify-content:center;
+box-sizing:border-box;
+}
+.product-card{
+width:164px;
+height:265px;
+padding:10px;
+background:#fff;
+display:flex;
+flex-direction:column;
+align-items:stretch;
+box-sizing:border-box;
+overflow:hidden;
+}
+.product-image{
+width:100%;
+height:145px;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+.product-image img{
+width:100%;
+height:100%;
+object-fit:contain;
+display:block;
+}
+.product-old-price{
+width:100%;
+height:24px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+direction:rtl;
+box-sizing:border-box;
+}
+.product-old-price span:first-child{
+font-size:11px;
+color:#999;
+text-decoration:line-through;
+}
+.discount{
+position:static;
+min-width:32px;
+height:20px;
+padding:0 6px;
+display:flex;
+align-items:center;
+justify-content:center;
+background:#D52D4E;
+color:#fff;
+font-size:10px;
+font-weight:700;
+border-radius:10px;
+box-sizing:border-box;
+}
+.product-name{
+width:100%;
+height:34px;
+margin-top:7px;
+font-size:12px;
+font-weight:500;
+color:#333;
+display:flex;
+align-items:center;
+overflow:hidden;
+white-space:nowrap;
+text-overflow:ellipsis;
+}
+.product-price{
+width:100%;
+height:27px;
+display:flex;
+align-items:center;
+justify-content:flex-start;
+gap:5px;
+direction:ltr;
+font-size:14px;
+font-weight:700;
+color:#222;
+}
+.product-price img{
+width:20px;
+height:auto;
+object-fit:contain;
+}
+.product-old-price{
+width:100%;
+height:20px;
+font-size:11px;
+color:#999;
+text-decoration:line-through;
+direction:ltr;
+text-align:left;
+}
+.amazingSwiper .swiper-button-next,
+.amazingSwiper .swiper-button-prev{
+width:32px;
+height:32px;
+margin-top:-16px;
+background:#fff;
+border-radius:50%;
+box-shadow:0 1px 4px rgba(0,0,0,.15);
+}
+.amazingSwiper .swiper-button-next::after,
+.amazingSwiper .swiper-button-prev::after{
+font-size:14px;
+font-weight:700;
+color:#333;
+}
+.amazingSwiper .swiper-button-next{
+right:5px;
+}
+.amazingSwiper .swiper-button-prev{
+left:5px;
+}
+.product-card .first-amazing-card {border-top-left-radius: 50px; border-bottom-left-radius: 50px; background-color: green;}
+
+.amazing-logo {width: 60px !important;}
+.amazing-logo2 {width: 120px !important;}
+.amazing-section-2 {background-color: #6FB92A;}

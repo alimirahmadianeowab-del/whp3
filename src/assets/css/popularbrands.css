@@ -14,17 +14,18 @@ div.popularbrands {
     border: 1px solid #efeff0;
     display: flex;
     flex-flow: column nowrap;
-    justify-content: center;
+        justify-content: center;
     align-items: center;
     .popularbrands-title-and-svg {
       width: 100%;
       height: 44px;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       padding-bottom: 20px;
       .popularbrands-svg {
         margin-left: 5px;
+        & svg {fill: black !important;}
       }
       .popular-brands-main-title {
         font-family: IranYekan;
