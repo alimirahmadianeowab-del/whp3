@@ -143,5 +143,5 @@
 .megamenu:has(.mobile:hover, .kalaye-digital:hover,.lavazem-khanegi:hover, .mod:hover, .tala:hover, .salamat:hover, .ketab:hover, .gift-card:hover, .asbab-bazi:hover, .petshop:hover, .left-mobile:hover) .left-laptop {
   display: none;
 }
-.left-side {background-color: white;}
-.right-side {background-color: white;}
+.left-side {background-color:var(--white-100);}
+.right-side {background-color:var(--white-100);}
