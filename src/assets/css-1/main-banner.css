@@ -1,0 +1,70 @@
+/* =========================
+   بنر اصلی
+========================= */
+.main-banner {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    direction: rtl;
+}
+.mainSwiper {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+/* =========================
+   دکمه های اسلایدر
+========================= */
+.mainSwiper .swiper-button-next,
+.mainSwiper .swiper-button-prev {
+    position: absolute !important;
+    top: auto !important;
+    bottom: 20px !important;
+    width: 42px !important;
+    height: 42px !important;
+    margin: 0 !important;
+    border-radius: 50%;
+    background: #fff;
+    color: #333;
+    z-index: 10;
+}
+.mainSwiper .swiper-button-prev {
+    right: 25px !important;
+    left: auto !important;
+}
+.mainSwiper .swiper-button-next {
+    right: 75px !important;
+    left: auto !important;
+}
+.mainSwiper .swiper-button-next::after,
+.mainSwiper .swiper-button-prev::after {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* =========================
+   نقطه های اسلایدر
+========================= */
+.mainSwiper .swiper-pagination {
+    bottom: 15px;
+}
+.mainSwiper .swiper-pagination-bullet {
+    width: 7px;
+    height: 7px;
+    opacity: 1;
+    background: #777;
+}
+.mainSwiper .swiper-pagination-bullet-active {
+    width: 20px;
+    border-radius: 10px;
+    background: #333;
+}

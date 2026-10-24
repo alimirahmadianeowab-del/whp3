@@ -1,0 +1,39 @@
+/* =========================
+   دسته بندی های سریع
+========================= */
+.quick-categories {
+    width: 90%;
+    margin: 20px auto 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    direction: rtl;
+}
+.quick-category {
+    width: 9%;
+    text-align: center;
+    cursor: pointer;
+}
+.category-icon {
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 8px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.category-icon img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+.quick-category p {
+    margin: 0;
+    color: #424750;
+    font-size: 12px;
+    line-height: 1.6;
+    white-space: nowrap;
+}
+.quick-categories {
+    direction: ltr;
+}

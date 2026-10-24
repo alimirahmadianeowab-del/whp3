@@ -1,0 +1,219 @@
+.custom-amazing-section {
+  width: calc(100% - 30px);
+  margin: 20px auto;
+  border: 1px solid #e0e0e2;
+  border-radius: 10px;
+  background-color: #fff;
+  direction: rtl;
+  overflow: hidden;
+}
+.custom-amazing-header {
+  width: calc(100% - 30px);
+  height: 70px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+}
+.custom-amazing-title {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #202020;
+  font-size: 15px;
+  font-weight: 700;
+}
+.custom-amazing-title-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-amazing-line {
+  width: 65px;
+  height: 2px;
+  background-color: #ef394e;
+  margin-top: 9px;
+}
+.customAmazingSwiper {
+  width: 100%;
+  direction: rtl;
+  position: relative;
+}
+.customAmazingSwiper .swiper-wrapper {
+  display: flex;
+}
+.customAmazingSwiper .swiper-slide {
+  width: 16.666666%;
+  min-width: 190px;
+  box-sizing: border-box;
+  border-left: 1px solid #e0e0e2;
+}
+.custom-amazing-card {
+  width: 100%;
+  min-height: 355px;
+  padding: 10px 15px 12px;
+  box-sizing: border-box;
+  background-color: #fff;
+  direction: rtl;
+}
+.custom-amazing-card-title {
+  width: 100%;
+  height: 28px;
+  color: #ef1681;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+.custom-amazing-image {
+  width: 100%;
+  height: 145px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+.custom-amazing-image img {
+  width: 145px;
+  height: 145px;
+  object-fit: contain;
+}
+.custom-amazing-product-name {
+  width: 100%;
+  min-height: 22px;
+  color: #3f4064;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.custom-amazing-model {
+  width: 100%;
+  min-height: 20px;
+  color: #3f4064;
+  font-size: 10px;
+  line-height: 18px;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.custom-amazing-delivery {
+  width: 100%;
+  min-height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 4px;
+  color: #8b8b8b;
+  font-size: 9px;
+  margin-top: 3px;
+}
+.custom-amazing-delivery-icon {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-amazing-price-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 7px;
+}
+.custom-amazing-price {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: #3f4064;
+  font-size: 13px;
+  font-weight: 700;
+}
+.custom-amazing-toman {
+  width: 17px;
+  height: 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-amazing-discount {
+  width: 38px;
+  height: 21px;
+  border-radius: 20px;
+  background-color: #ef394e;
+  color: #fff;
+  font-size: 10px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-amazing-old-price {
+  width: 100%;
+  height: 21px;
+  padding-right: 27px;
+  box-sizing: border-box;
+  color: #b0b0b0;
+  font-size: 9px;
+  text-decoration: line-through;
+  text-align: right;
+}
+.custom-amazing-bottom {
+  width: 100%;
+  margin-top: 5px;
+}
+.custom-amazing-progress {
+  width: 100%;
+  height: 3px;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.custom-amazing-progress-fill {
+  width: 0%;
+  height: 100%;
+  background-color: #ef394e;
+  border-radius: 10px;
+}
+.custom-amazing-bottom-info {
+  width: 100%;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: #ef394e;
+  font-size: 10px;
+}
+.customAmazingSwiper .swiper-button-prev,
+.customAmazingSwiper .swiper-button-next {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e0e0e2;
+  border-radius: 50%;
+  background-color: #fff;
+  top: 55%;
+  margin-top: -20px;
+  z-index: 10;
+}
+.customAmazingSwiper .swiper-button-prev {
+  right: auto;
+  left: 10px;
+}
+.customAmazingSwiper .swiper-button-next {
+  right: 10px;
+}
+.customAmazingSwiper .swiper-button-prev::after,
+.customAmazingSwiper .swiper-button-next::after {
+  color: #777;
+  font-size: 18px;
+  font-weight: 400;
+}

@@ -1,0 +1,33 @@
+.firstgroupingbanner {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+  padding: 20px 0px;
+  .grouping-banner {
+    width: 92%;
+    height: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    .groupingbannerimage {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+      }
+    }
+  }
+}

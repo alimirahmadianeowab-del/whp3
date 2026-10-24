@@ -1,0 +1,23 @@
+.view-all-card{
+width:156px;
+height:260px;
+background:#fff;
+border:1px solid #eee;
+display:flex;
+align-items:center;
+justify-content:center;
+box-sizing:border-box;
+}
+.view-all-link{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+color:#3154a5;
+font-size:14px;
+font-weight:600;
+text-decoration:none;
+}
+.view-all-link span:last-child{
+font-size:18px;
+}
